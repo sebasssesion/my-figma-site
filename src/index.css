@@ -1,32 +1,51 @@
-.hero {
-  padding: 24px;
-  text-align: center;
+body {
+  margin: 0;
+  background: #080808;
+  font-family: system-ui, sans-serif;
 }
 
-.hero h1 {
-  font-size: 28px;
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero p {
-  margin: 16px 0;
+.card-border {
+  width: 318px;
+  height: 318px;
+  padding: 4px; /* thickness of the stroke */
+  border-radius: 26px;
+  background: linear-gradient(
+    180deg,
+    rgba(61,61,61,100),
+    rgba(43,43,43,100)
+  );
 }
 
-.hero button {
-  padding: 12px 20px;
-  font-size: 16px;
+.card {
+  width: 100%;            /* mobile width */
+  height: 100%;
+  border-radius: 22px;
+  background: #121212;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    padding: 80px;
-    text-align: left;
-  }
+.btc-badge {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
 
-  .hero h1 {
-    font-size: 48px;
-  }
+  background: rgba(61,61,61,30)
+  border: 2.5px solid rgba(61,61,61,100);
 
-  .hero p {
-    font-size: 18px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f7931a;
+  font-size: 20px;
+
+  box-shadow:
+    0 6px 16px rgba(0,0,0,100),
+    inset 0 1px 0 rgba(255,255,255,0.06);
 }

@@ -1,12 +1,14 @@
 import './index.css';
-import Hero from './sections/Hero';
+import Card from './components/card';
+import BtcBadge from './components/BtcBadge';
 
 function App() {
   return (
-    <>
-      <Hero />
-      {/* Future sections will go here */}
-    </>
+    <div className="page">
+      <Card>
+        <BtcBadge />
+      </Card>
+    </div>
   );
 }
 
