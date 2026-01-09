@@ -2,16 +2,16 @@ function Card({ children }) {
   return (
     <div className="card-border">
       <div className="card">
+        {/* Top section */}
         <div className="card-top">
           {/* Left: BTC badge */}
-        <div className="card-left">
+          <div className="card-left">
             <div className="card-left-inner">
-                {children}
+              {children}
             </div>
-        </div>
+          </div>
 
-
-          {/* Right side */}
+          {/* Right: values */}
           <div className="card-right">
             <div className="card-right-inner">
               <div className="card-value">0.89</div>
@@ -26,10 +26,17 @@ function Card({ children }) {
                   </span>
                 </div>
               </div>
-            </div> {/* ✅ closes card-right-inner */}
-          </div> {/* closes card-right */}
-        </div> {/* closes card-top */}
-      </div> {/* closes card */}
+            </div>
+          </div>
+        </div>
+
+        {/* Calculate button INSIDE the card */}
+        <div className="calculate-container">
+          <button className="calculate-button">
+            Calculate
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

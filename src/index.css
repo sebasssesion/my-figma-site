@@ -10,9 +10,11 @@ body {
 .page {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;   /* 👈 THIS is the fix */
   align-items: center;
   justify-content: center;
 }
+
 
 
 .card-border {
@@ -160,4 +162,11 @@ body {
   width: 42px;
   height: 42px;
   display: block;
+}
+
+.calculate-container {
+  margin-top: auto;        /* pushes button to bottom */
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
