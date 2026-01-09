@@ -1,7 +1,13 @@
+import btcLogo from '../assets/bitcoin.webp';
+
 function BtcBadge() {
   return (
     <div className="btc-badge">
-      BTC
+      <img
+        src={btcLogo}
+        alt="Bitcoin"
+        className="btc-icon"
+      />
     </div>
   );
 }
