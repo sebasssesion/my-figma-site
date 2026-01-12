@@ -40,17 +40,29 @@ function Card({ children }) {
             <div className="inputs-preview">
         <div className="input-col">
           <div className="input-label input-label--muted">Entry Price</div>
-            <div className="input-value">90,000</div>
+            <div className="input-value">
+              <span className="input-currency">$</span>
+            <span className="input-amount">90,000</span>
+          </div>
+
           </div>
 
         <div className="input-col">
           <div className="input-label input-label--active">Balance</div>
-            <div className="input-value input-value--positive">90,000</div>
+            <div className="input-value input-value--positive">
+              <span className="input-currency">$</span>
+            <span className="input-amount">90,000</span>
+            </div>
+
           </div>
 
         <div className="input-col">
           <div className="input-label input-label--muted">Stop Loss</div>
-            <div className="input-value">90,000</div>
+            <div className="input-value">
+              <span className="input-currency">$</span>
+                <span className="input-amount">90,000</span>
+              </div>
+
               </div>
             </div>
           </div>

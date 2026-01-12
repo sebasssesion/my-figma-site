@@ -1,4 +1,4 @@
-import Card from './components/Card';
+import Card from './components/card';
 import BtcBadge from './components/BtcBadge';
 
 function App() {
